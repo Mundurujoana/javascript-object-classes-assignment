@@ -1,4 +1,5 @@
-
+// JavaScript Assignment
+// Assignment 1
 kiosk = {
   name:"oranges",
   price: 30.00,
@@ -6,19 +7,21 @@ kiosk = {
 return `2 ${fruitName} for KES ${quantity * this.price}`; 
     }
 }
+console.log(kiosk.calculateFruitCost("Oranges", 2));
 
-console.log(kiosk.calculateFruitCost("Oranges", 6.00));
 
-
+// Assignment 2
 class KioskCalc{
-    constructor(fruitsPriceList){ 
+    constructor(fruitName,quantity,fruitsPriceList){ 
+    this.fruitName =fruitName;
+    this.quantity = quantity;
     this.fruitsPriceList = {
         "orange": 30,
         "mango": 15,
         "avocado": 40 
     },
-    this.getTotalCost = function(fruit, quantity){
-      return `2 ${fruit} for KES ${quantity * fruitsPriceList.orange}`
+    this.getTotalCost = function(){
+      return `2 ${this.fruitName} for KES ${this.quantity * this.fruitsPriceList.orange}`
   }
 }
 }
